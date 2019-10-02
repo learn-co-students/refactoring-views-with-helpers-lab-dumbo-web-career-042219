@@ -17,6 +17,7 @@ RSpec.describe Song, type: :model do
     song.artist_name = "Tears for Fears"
     song.save
     expect(song.artist_name).to eq "Tears for Fears"
+    # debugger
     expect(song.artist.name).to eq "Tears for Fears"
   end
 
